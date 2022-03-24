@@ -17,6 +17,7 @@ import image16 from "./assets/image16.jpg";
 import image17 from "./assets/image17.jpg";
 import image18 from "./assets/image18.jpg";
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default [
   image1,
   image2,
