@@ -35,6 +35,7 @@ nav span:last-child {
 .inner-carousel {
   display: flex;
   z-index: 2;
+  transition: 0.1s ease-in-out;
 }
 
 .carousel {
@@ -42,4 +43,40 @@ nav span:last-child {
   margin-top: 200px;
   overflow: hidden;
   background: lightblue;
+}
+
+.slider-arrows {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-arrows div {
+  z-index: 5;
+  padding: 20px;
+  background: white;
+  color: #4162a8;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.slider-arrows div:hover {
+  color: white;
+  background: #4162a8;
+}
+
+.slider-arrows div:first-child {
+  border-radius: 0 50% 50% 0;
+}
+
+.slider-arrows div:last-child {
+  border-radius: 50% 0 0 50%;
+}
+
+@media screen and (max-width: 700px) {
+  .slider-arrows {
+    display: none;
+  }
 }
